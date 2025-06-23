@@ -1,0 +1,46 @@
+/* Custom styles for the Poppins font, ensuring it's used throughout the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #334155; /* Dark slate gray for text, providing good contrast */
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+}
+/* Ensures html element also takes full viewport height for consistent layout */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+    min-height: 100vh;
+}
+/* Custom scrollbar styling for a cleaner look */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+::-webkit-scrollbar-track {
+    background: #e2e8f0; /* Light gray background for the track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+::-webkit-scrollbar-thumb {
+    background: #94a3b8; /* Medium gray color for the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b; /* Darker gray on hover for the thumb */
+}
+
+/* Specific hover effects for portfolio cards to enhance interactivity */
+.portfolio-card:hover .project-title {
+    color: #4f46e5; /* Changes title color to indigo on hover */
+}
+.portfolio-card:hover .project-description {
+    color: #1e293b; /* Darkens description text on hover */
+}
+
+/* Style for the profile image to make it zoomed in slightly to fill space and move down/left */
+#profile-img {
+    /* Zooms the image content, shifts it slightly to the left, and now slightly down */
+    transform: scale(1.3) translateX(-3%) translateY(4.5%); /* Combined scale, translate X, and translate Y */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for any future transform effects */
+}
+
+/* Removed hover zoom effect for the profile image */
+#profile-img:hover {
+    /* No additional transform on hover */
+}
